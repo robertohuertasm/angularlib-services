@@ -1,0 +1,6 @@
+{
+  "editor.tabSize": 2,
+  "tslint.enable": true,
+  "files.eol": "\n",
+  "vsicons.presets.angular": true
+}

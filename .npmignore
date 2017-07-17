@@ -1,0 +1,11 @@
+example
+.vscode
+src
+package-lock.json
+rollup.config.js
+tsconfig.json
+tsconfig.build.json
+tslint.json
+README.md
+LICENSE
+.gitignore
