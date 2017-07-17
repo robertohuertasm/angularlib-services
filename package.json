@@ -2,8 +2,8 @@
   "name": "angular-service-module",
   "version": "1.0.0",
   "description": "Example of how to create an angular module in order to be consumed as an npm package. (service example)",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es5.js",
+  "main": "dist/bundles/angular-service-module.umd.js",
+  "module": "dist/index.js",
   "es2015": "dist/index.js",
   "typings": "dist/index.d.ts",
   "devDependencies": {
