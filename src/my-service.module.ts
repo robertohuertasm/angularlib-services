@@ -1,12 +1,12 @@
 import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA, Optional, SkipSelf } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { DummyService } from './services/dummy.service';
 
 import 'rxjs/add/operator/map';
 
 @NgModule({
   imports: [
-    HttpClientModule,
+    HttpModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
