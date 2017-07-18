@@ -46,7 +46,7 @@ describe('Dummy Service test', () => {
         geo: {
           lat: 1234,
           lng: 2341,
-        }
+        },
       },
       phone: '12345',
       website: 'http://test.com',
