@@ -13,6 +13,7 @@
     "codelyzer": "^3.1.2",
     "copyfiles": "^1.2.0",
     "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
     "rimraf": "^2.6.1",
     "rollup": "^0.45.2",
     "rollup-plugin-node-resolve": "^3.0.0",
@@ -24,7 +25,8 @@
   },
   "scripts": {
     "ngc": "ngc",
-    "rolllup": "rollup",
+    "rollup": "rollup",
+    "karma": "karma",
     "lint": "tslint 'src/**/*.ts'",
     "transpile:es2015": "ngc -p tsconfig.es2015.json",
     "transpile:es5": "ngc -p tsconfig.es5.json",
@@ -38,7 +40,6 @@
     "minify": "uglifyjs dist/bundles/angularlib-services.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angularlib-services.umd.min.js",
     "prepublishOnly": "npm run build && npm run test",
     "test": "echo 'no-test'",
-    "prepublish": "npm run build",
     "publish": "npm publish dist --access=public"
   },
   "repository": {
