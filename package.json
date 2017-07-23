@@ -1,7 +1,7 @@
 {
-  "name": "angular-service-module",
+  "name": "angularlib-services",
   "version": "1.0.0",
-  "description": "Example of how to create an angular module in order to be consumed as an npm package. (service example)",
+  "description": "Example of how to create an angular module exporting services in order to be consumed as an npm package.",
   "main": "dist/bundles/angular-service-module.umd.js",
   "module": "dist/index.js",
   "es2015": "dist/index.js",
