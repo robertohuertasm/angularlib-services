@@ -6,8 +6,8 @@
   "angularCompilerOptions": {
     "strictMetadataEmit": true, // halt if something is wrong in our metadata
     "skipTemplateCodegen": true, // avoid ng-factories...
-    "flatModuleOutFile": "my-services.js",
-    "flatModuleId": "my-services",
+    "flatModuleOutFile": "angularlib-services.js",
+    "flatModuleId": "angularlib-services",
     "annotateForClosureCompiler": true
   }
 }

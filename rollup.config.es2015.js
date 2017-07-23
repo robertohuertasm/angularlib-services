@@ -1,14 +1,20 @@
+import resolve from 'rollup-plugin-node-resolve';
+
+const globals = {
+  '@angular/core': 'ng.core',
+  '@angular/http': 'ng.http',
+  'rxjs/Observable': 'Rx',
+  'rxjs/add/operator/map': 'Rx.Observable.prototype'
+};
+
 export default {
-  entry: 'build/my-services.js',
-  dest: 'dist/my-services.js',
+  entry: 'build/angularlib-services.js',
+  dest: 'dist/angularlib-services.js',
   format: 'es',
   exports: 'named',
-  moduleName: 'my.services',
+  moduleName: 'angularlib.services',
   sourceMap: false,
-  globals: {
-    '@angular/core': 'ng.core',
-    '@angular/http': 'ng.http',
-    'rxjs/Observable': 'Rx',
-    'rxjs/operator/map': 'Rx.Observable.prototype'
-  }
+  plugins: [resolve()],
+  globals: globals,
+  external: Object.keys(globals),
 };

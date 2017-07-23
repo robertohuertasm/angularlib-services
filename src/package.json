@@ -2,9 +2,9 @@
   "name": "angularlib-services",
   "version": "1.0.0",
   "description": "Example of how to create an angular module exporting services in order to be consumed as an npm package.",
-  "main": "bundles/my-services.umd.js", // umd
-  "module": "my-services.es5.js", //fesm5
-  "es2015": "my-services.js", //fesm15
+  "main": "bundles/my-services.umd.js",
+  "module": "angularlib-services.es5.js",
+  "es2015": "angularlib-services.js",
   "typings": "angularlib-services.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.3.0",
