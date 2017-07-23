@@ -1,0 +1,30 @@
+{
+  "name": "angularlib-services",
+  "version": "1.0.0",
+  "description": "Example of how to create an angular module exporting services in order to be consumed as an npm package.",
+  "main": "bundles/my-services.umd.js", // umd
+  "module": "my-services.es5.js", //fesm5
+  "es2015": "my-services.js", //fesm15
+  "typings": "angularlib-services.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.3.0",
+    "@angular/http": "^4.3.0",
+    "@angular/platform-browser": "^4.3.0",
+    "zone.js": "^0.8.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertohuertasm/angularlib-services.git"
+  },
+  "keywords": [
+    "angular",
+    "modules",
+    "services"
+  ],
+  "author": "Roberto Huertas <roberto.huertas@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertohuertasm/angularlib-services/issues"
+  },
+  "homepage": "https://github.com/robertohuertasm/angularlib-services#readme"
+}

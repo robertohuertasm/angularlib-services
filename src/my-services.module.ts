@@ -10,18 +10,18 @@ import 'rxjs/add/operator/map';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class MyServiceModule {
+export class MyServicesModule {
 
   public static forRoot(): ModuleWithProviders {
     return {
-      ngModule: MyServiceModule,
+      ngModule: MyServicesModule,
       providers: [
         DummyService,
       ],
     }
   }
 
-  constructor( @Optional() @SkipSelf() parentModule: MyServiceModule) {
+  constructor( @Optional() @SkipSelf() parentModule: MyServicesModule) {
     if (parentModule) {
       throw new Error('MyServiceModule is already loaded. Import it in the AppModule only.');
     }

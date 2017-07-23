@@ -1,9 +1,9 @@
 export default {
-  entry: 'dist/index.js',
-  dest: 'dist/bundles/angular-service-module.umd.js',
+  entry: 'build/my-services.js',
+  dest: 'dist/bundles/my-services.umd.js',
   format: 'umd',
   exports: 'named',
-  moduleName: 'angular.service.module',
+  moduleName: 'my.services',
   sourceMap: false,
   globals: {
     '@angular/core': 'ng.core',

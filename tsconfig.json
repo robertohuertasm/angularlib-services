@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "build",
     "declaration": true,
+    "module": "es2015",
+    "target": "es5", // FESM5
     "stripInternal": true,
     "experimentalDecorators": true,
-    "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "strict": true,
-    "target": "es2015",
-    "rootDir": "./src",
-    "outDir": "dist",
     "sourceMap": true,
     "inlineSources": true,
     "skipLibCheck": true,
@@ -25,10 +25,6 @@
     ]
   },
   "files": [
-    "src/index.ts"
-  ],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true,
-    "genDir": "dist"
-  }
+    "src/public_api.ts"
+  ]
 }

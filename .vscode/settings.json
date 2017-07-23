@@ -2,5 +2,25 @@
   "editor.tabSize": 2,
   "tslint.enable": true,
   "files.eol": "\n",
-  "vsicons.presets.angular": true
+  "vsicons.presets.angular": true,
+  "vsicons.associations.files": [
+    {
+      "icon": "tsconfig",
+      "extensions": [
+        "tsconfig.es5.json",
+        "tsconfig.es2015.json",
+        "tsconfig.test.json"
+      ],
+      "filename": true
+    },
+     {
+      "icon": "rollup",
+      "extensions": [
+        "rollup.config.es5.js",
+        "rollup.config.es2015.js",
+        "rollup.config.umd.js"
+      ],
+      "filename": true
+    }
+  ]
 }
