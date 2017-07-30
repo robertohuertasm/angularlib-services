@@ -10,7 +10,7 @@ It will generate all the needed files for your npm to work according to the [Ang
 - typings
 - metadata for AoT compatibility
 
-It also supports testing and `tslint` with `codelyzer`.
+It also supports testing, code coverage reporting and `tslint` with `codelyzer`.
 
 ## How to use this
 
@@ -29,6 +29,8 @@ Note that there's a specific `package.json` and `README.md` files in the source 
 ## Testing
 
 Place your tests in the `test` folder. There, you will find a file named `test.ts` where you can put all your generic dependencies used by your tests (i.e. rxjs operators).
+
+Whenever you test your code, a `coverage` folder will be created with all the coverage information.
 
 ## Publishing
 
