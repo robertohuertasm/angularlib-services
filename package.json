@@ -64,7 +64,8 @@
   "keywords": [
     "angular",
     "modules",
-    "services"
+    "services",
+    "library"
   ],
   "author": "Roberto Huertas <roberto.huertas@outlook.com>",
   "license": "MIT",
