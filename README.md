@@ -18,6 +18,27 @@ It also supports testing, code coverage reporting and `tslint` with `codelyzer`.
 
 Download/fork/clone this project. Then place the code of your new library inside the `src` folder and all your tests inside the `test` folder. Once your happy with your code, **build it, test it and publish it**. This project will make this easy for you. Just see the sections below for more information.
 
+### Changing the name of your library
+
+First thing that you may want to do is provide your own custom name to the library. If you don't do that, the library will be published with `angularlib` as a name.
+
+In order to change the name you will have to change it in several files:
+
+- `./src/package.json``: not only the name but `main`, `module`, `es2015` and `typings` properties.
+- `./package.json`: look for the `minify` task and change the bundle name accordingly.
+- All the `Rollup` files: check the `entry`, `dest` and `moduleName` properties.
+- `./tsconfig.es5.json` & `./tsconfig.es2015.json`: check `flatModuleOutFile` and `flatModuleId` properties.
+
+### Adding global dependencies
+
+Your library must not have any dependency on `Angular`, `rxjs` or any other library that any `Angular` app that will end up hosting it will have installed for sure (mainly because they need it to run any `Angular` application).
+
+That's why all these kind of dependencies must be added to the `peerDependencies` properties in the `./src/package.json` file and as `devDependencies` in `./package.json`.
+
+Besides that, you must tell `Rollup` that these dependencies are going to be available when your library is consumed. That's why you have to check all the `rollup.config.*.js` files and add these dependencies to the `globals` variable.
+
+In order to find the value of each property you'll have to look into its repository. For instance, for `@angular/core`, if we see [their rollup configuration code](https://github.com/angular/angular/blob/master/packages/core/rollup.config.js#L25) we can clearly see that the value is `ng.core`.
+
 ## Building your library
 
 In order to build your library just do:
@@ -74,3 +95,7 @@ If you use [Visual Studio Code](https://code.visualstudio.com/) and the amazing 
 - [Awesome article](http://2ality.com/2017/04/setting-up-multi-platform-packages.html) by Dr. Axel Raushmayer about building multi-platform npm packages.
 - [angular-cli Github thread about supporting libraries](https://github.com/angular/angular-cli/issues/6510).
 - @filipesilva's [quickstart](https://github.com/filipesilva/angular-quickstart-lib). Although this is still a WIP.
+
+## What's next
+
+My idea is to unify both [angularlib](https://github.com/robertohuertasm/angularlib) & [angularlib-services](https://github.com/robertohuertasm/angularlib-services) and provide some sort of `CLI` experience within the next weeks.
