@@ -34,6 +34,28 @@ Whenever you test your code, a `coverage` folder will be created with all the co
 
 If you want to check that your library works in a real `Angular` project before publishing it `npm` you can use `npm link`. If you don't know how to use it, [here](http://browsenpm.org/help#linkinganynpmpackagelocally) you will find a fantastic resource to learn about it.
 
+**IMPORTANT**: In order to make your library work in your app while you're developing it (the library, I mean) you may find some issues with `node_modules` while using `npm link`. Read [this link](https://github.com/angular/angular-cli/wiki/stories-linked-library) if you want to understand the issue. 
+
+The common error that you will get will be something similar to this:
+
+```
+Uncaught Error: Unexpected value 'MyModule' imported by the module 'AppModule'. Please add a @NgModule annotation.
+    at syntaxError (compiler.es5.js:1690)
+    at compiler.es5.js:15386
+    at Array.forEach (<anonymous>)
+    at CompileMetadataResolver.webpackJsonp.../../../compiler/@angular/compiler.es5.js.CompileMetadataResolver.getNgModuleMetadata (compiler.es5.js:15369)
+    at JitCompiler.webpackJsonp.../../../compiler/@angular/compiler.es5.js.JitCompiler._loadModules (...)
+```
+
+Don't worry, you have to go to your **app's tsconfig.json file** and add this to your `compilerOptions`: 
+
+```
+"paths": {
+    "@angular/*": ["../node_modules/@angular/*"],
+    "rxjs/*": ["../node_modules/rxjs/*"]
+  }
+```
+
 ## Publishing
 
 `npm run publish` will do the job for you. Note that it won't take care of version bumping but it will run `tslint` and the `test` command before proceeding to publication.

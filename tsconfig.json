@@ -14,11 +14,6 @@
     "sourceMap": true,
     "inlineSources": true,
     "skipLibCheck": true,
-    "paths": {
-      "@angular/core": ["../node_modules/@angular/core"],
-      "@angular/common/http": ["../node_modules/@angular/common/http"],
-      "rxjs/*": ["../node_modules/rxjs/*"]
-    },
     "lib": [
       "es2015",
       "dom"
