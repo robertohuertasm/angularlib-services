@@ -35,7 +35,7 @@ Your library must not have any dependency on `Angular`, `rxjs` or any other libr
 
 That's why all these kind of dependencies must be added to the `peerDependencies` properties in the `./src/package.json` file and as `devDependencies` in `./package.json`.
 
-Besides that, you must tell `Rollup` that these dependencies are going to be available when your library is consumed. That's why you have to check all the `rollup.config.*.js` files and add these dependencies to the `globals` variable.
+Besides that, you must tell `Rollup` that these dependencies are going to be available when your library is consumed so check all the `rollup.config.*.js` files and add these dependencies to the `globals` variable.
 
 In order to find the value of each property you'll have to look into its repository. For instance, for `@angular/core`, if we see [their rollup configuration code](https://github.com/angular/angular/blob/master/packages/core/rollup.config.js#L25) we can clearly see that the value is `ng.core`.
 
