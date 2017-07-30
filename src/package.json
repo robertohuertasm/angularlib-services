@@ -2,7 +2,7 @@
   "name": "angularlib-services",
   "version": "1.0.0",
   "description": "Example of how to create an angular module exporting services in order to be consumed as an npm package.",
-  "main": "bundles/my-services.umd.js",
+  "main": "bundles/angularlib-services.umd.js",
   "module": "angularlib-services.es5.js",
   "es2015": "angularlib-services.js",
   "typings": "angularlib-services.d.ts",
