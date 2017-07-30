@@ -1,8 +1,8 @@
 # angularlib (services)
 
-Example of how to create an angular module in order to be consumed as an npm package. (service example)
+Starter kit that will help you create an angular module ready to be consumed as an npm package for any `Angular` application.. (service example)
 
-It will generate all the needed files for your npm to work according to the [Angular Package Format v4.0 spec](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview):
+It will generate all the needed files for your npm module to work according to the [Angular Package Format v4.0 spec](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview):
 
 - UMD bundle
 - FESM5
@@ -10,7 +10,7 @@ It will generate all the needed files for your npm to work according to the [Ang
 - typings
 - metadata for AoT compatibility
 
-It also supports testing, code coverage reporting and `tslint` with `codelyzer`.
+It also supports AoT, testing, code coverage reporting and `tslint` with `codelyzer`.
 
 **NOTE**: If you're working on an Angular Components/Directives/Pipes Library, please check [angularlib](https://github.com/robertohuertasm/angularlib).
 
