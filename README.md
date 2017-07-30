@@ -38,6 +38,10 @@ If you want to check that your library works in a real `Angular` project before 
 
 `npm run publish` will do the job for you. Note that it won't take care of version bumping but it will run `tslint` and the `test` command before proceeding to publication.
 
+## Extras
+
+If you use [Visual Studio Code](https://code.visualstudio.com/) and the amazing extension [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) (;P) you can get icons for the `Rollup` and `tsconfig` files: `F1 > Icons: Apply Icons Customization`.
+
 
 ## Some resources about how to build an Angular library
 
