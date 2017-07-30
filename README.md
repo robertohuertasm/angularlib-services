@@ -31,7 +31,7 @@ In order to change the name you will have to change it in several files:
 
 ### Adding global dependencies
 
-Your library must not have any dependency on `Angular`, `rxjs` or any other library that any `Angular` app that will end up hosting it will have installed for sure (mainly because they need it to run any `Angular` application).
+Your library must not have any dependency on `Angular`, `rxjs` or any other library that any `Angular` app that will end up hosting it will have already installed (mainly because they need it to run any `Angular` application).
 
 That's why all these kind of dependencies must be added to the `peerDependencies` properties in the `./src/package.json` file and as `devDependencies` in `./package.json`.
 
