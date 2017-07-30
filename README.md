@@ -14,7 +14,7 @@ It also supports testing, code coverage reporting and `tslint` with `codelyzer`.
 
 ## How to use this
 
-Download/fork/clone this project. Then place the code of your new library inside the `src` folder and all your tests inside the `test` folder. Once your happy with your code, build it, test it and publish it. See the sections below for more information.
+Download/fork/clone this project. Then place the code of your new library inside the `src` folder and all your tests inside the `test` folder. Once your happy with your code, **build it, test it and publish it**. This project will make this easy for you. Just see the sections below for more information.
 
 ## Building your library
 
@@ -32,6 +32,17 @@ Place your tests in the `test` folder. There, you will find a file named `test.t
 
 Whenever you test your code, a `coverage` folder will be created with all the coverage information.
 
+If you want to check that your library works in a real `Angular` project before publishing it `npm` you can use `npm link`. If you don't know how to use it, [here](http://browsenpm.org/help#linkinganynpmpackagelocally) you will find a fantastic resource to learn about it.
+
 ## Publishing
 
 `npm run publish` will do the job for you. Note that it won't take care of version bumping but it will run `tslint` and the `test` command before proceeding to publication.
+
+
+## Some resources about how to build an Angular library
+
+- [Angular Package Format v4.0 spec](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview) 
+- [Great talk](https://www.youtube.com/watch?v=unICbsPGFIA&list=WL&index=7) by Jason Aden (@jasonaden) in 2017 Ng-Conf.
+- [Awesome article](http://2ality.com/2017/04/setting-up-multi-platform-packages.html) by Dr. Axel Raushmayer about building multi-platform npm packages.
+- [angular-cli Github thread about supporting libraries](https://github.com/angular/angular-cli/issues/6510).
+- @filipesilva's [quickstart](https://github.com/filipesilva/angular-quickstart-lib). Although this is still a WIP.
