@@ -3,7 +3,7 @@
  */
 
 module.exports = function (config) {
-  var wpConfig = require('./webpack/webpack.config.js')({ env: 'test' });
+  var wpConfig = require('./tools/webpack.config.js')({ env: 'test' });
 
   var configuration = {
 
@@ -30,14 +30,14 @@ module.exports = function (config) {
      * we are building the test environment in ./spec-bundle.js
      */
     files: [
-      { pattern: './webpack/spec-bundle.js', watched: false }
+      { pattern: './tools/spec-bundle.js', watched: false }
     ],
 
     /*
      * preprocess matching files before serving them to the browser
      * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
      */
-    preprocessors: { './webpack/spec-bundle.js': ['coverage', 'webpack', 'sourcemap'] },
+    preprocessors: { './tools/spec-bundle.js': ['coverage', 'webpack', 'sourcemap'] },
 
     // Webpack Config
     webpack: wpConfig,
