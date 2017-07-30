@@ -50,10 +50,11 @@
     "package:umd": "rollup -c rollup.config.umd.js",
     "build:es5umd": "rimraf build && npm run transpile:es5 && npm run package:es5 && npm run package:umd",
     "build:es2015": "rimraf build && npm run transpile:es2015 && npm run package:es2015",
-    "build": "npm run lint && rimraf dist && npm run build:es5umd && npm run build:es2015 && npm run copy:buildartifacts && npm run minify && rimraf build",
+    "build": "npm run lint && rimraf dist coverage build && npm run build:es5umd && npm run build:es2015 && npm run copy:buildartifacts && npm run minify && rimraf build",
     "minify": "uglifyjs dist/bundles/angularlib-services.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angularlib-services.umd.min.js",
-    "prepublishOnly": "npm run build && npm run test",
-    "test": "karma start",
+    "prepublishOnly": "npm run build && npm run test:ci",
+    "test": "karma start --auto-watch --no-single-run",
+    "test:ci": "karma start",
     "publish": "npm publish dist --access=public"
   },
   "repository": {
