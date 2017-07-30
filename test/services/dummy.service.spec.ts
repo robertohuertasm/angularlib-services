@@ -1,9 +1,9 @@
-import { DummyService } from '../../src/services/dummy.service';
 import { ReflectiveInjector } from '@angular/core';
 import { Http, ConnectionBackend, RequestOptions, BaseRequestOptions, Response, ResponseOptions } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { fakeAsync, tick } from '@angular/core/testing';
 import { IUser } from '../../src/models/user';
+import { DummyService } from '../../src/services/dummy.service';
 
 describe('Dummy Service test', () => {
 
