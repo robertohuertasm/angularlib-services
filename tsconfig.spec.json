@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "declaration": false,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "watch": false,
+    "outDir": "dist",
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "jasmine",
+      "node",
+      "source-map",
+      "webpack"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "aot",
+    "src"
+  ]
+}
