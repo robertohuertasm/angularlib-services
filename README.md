@@ -12,6 +12,8 @@ It will generate all the needed files for your npm to work according to the [Ang
 
 It also supports testing, code coverage reporting and `tslint` with `codelyzer`.
 
+**NOTE**: If you're working on an Angular Components/Directives/Pipes Library, please check [angularlib](https://github.com/robertohuertasm/angularlib).
+
 ## How to use this
 
 Download/fork/clone this project. Then place the code of your new library inside the `src` folder and all your tests inside the `test` folder. Once your happy with your code, **build it, test it and publish it**. This project will make this easy for you. Just see the sections below for more information.
