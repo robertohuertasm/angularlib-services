@@ -24,7 +24,7 @@ First thing that you may want to do is provide your own custom name to the libra
 
 In order to change the name you will have to change it in several files:
 
-- `./src/package.json``: not only the name but `main`, `module`, `es2015` and `typings` properties.
+- `./src/package.json`: not only the name but `main`, `module`, `es2015` and `typings` properties.
 - `./package.json`: look for the `minify` task and change the bundle name accordingly.
 - All the `Rollup` files: check the `entry`, `dest` and `moduleName` properties.
 - `./tsconfig.es5.json` & `./tsconfig.es2015.json`: check `flatModuleOutFile` and `flatModuleId` properties.
