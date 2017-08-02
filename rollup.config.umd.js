@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 
 const globals = {
   '@angular/core': 'ng.core',
@@ -14,7 +15,7 @@ export default {
   exports: 'named',
   moduleName: 'angularlib.services',
   sourceMap: false,
-  plugins: [resolve()],
+  plugins: [resolve(), commonjs()],
   globals: globals,
   external: Object.keys(globals),
 };
