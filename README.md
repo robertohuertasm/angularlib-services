@@ -87,7 +87,6 @@ Don't worry, you have to go to your **app's tsconfig.json file** and add this to
 
 If you use [Visual Studio Code](https://code.visualstudio.com/) and the amazing extension [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) (;P) you can get icons for the `Rollup` and `tsconfig` files: `F1 > Icons: Apply Icons Customization`.
 
-
 ## Some resources about how to build an Angular library
 
 - [Angular Package Format v4.0 spec](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview) 
